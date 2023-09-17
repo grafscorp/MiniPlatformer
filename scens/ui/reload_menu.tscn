@@ -1,0 +1,115 @@
+[gd_scene load_steps=11 format=3 uid="uid://bcbetpf6owk51"]
+
+[ext_resource type="Script" path="res://scripts/reload_menu.gd" id="1_d8nbk"]
+[ext_resource type="Theme" uid="uid://bok88wi1j82nj" path="res://themes/main_theme.tres" id="1_g18gs"]
+[ext_resource type="Texture2D" uid="uid://bqq8hjhymiva2" path="res://assets/Menu/Buttons/Close.png" id="2_2qor3"]
+[ext_resource type="Texture2D" uid="uid://l1tqypdekilb" path="res://assets/Menu/Buttons/Restart.png" id="2_fftue"]
+[ext_resource type="Texture2D" uid="uid://c6tfg13hf7ob3" path="res://assets/Menu/Buttons/RestartFocused.png" id="4_vdr8i"]
+[ext_resource type="Texture2D" uid="uid://dki7vwchnsloi" path="res://assets/Menu/Buttons/CloseFocused.png" id="6_18m8o"]
+
+[sub_resource type="InputEventJoypadButton" id="InputEventJoypadButton_4hqfj"]
+device = -1
+button_index = 2
+pressed = true
+
+[sub_resource type="Shortcut" id="Shortcut_uyed5"]
+events = [SubResource("InputEventJoypadButton_4hqfj")]
+
+[sub_resource type="InputEventJoypadButton" id="InputEventJoypadButton_vqqn8"]
+button_index = 1
+pressed = true
+
+[sub_resource type="Shortcut" id="Shortcut_12dsl"]
+events = [SubResource("InputEventJoypadButton_vqqn8")]
+
+[node name="ReloadMenu" type="CanvasLayer" node_paths=PackedStringArray("reloadBTN")]
+process_mode = 3
+script = ExtResource("1_d8nbk")
+reloadBTN = NodePath("Background/VBoxContainer/VBoxContainer/HBoxContainer/Reload")
+
+[node name="Background" type="ColorRect" parent="."]
+custom_minimum_size = Vector2(500, 400)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Background"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 50
+alignment = 1
+
+[node name="Control2" type="Control" parent="Background/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Background/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("1_g18gs")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 50
+text = "Вы проиграли"
+horizontal_alignment = 1
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="Background/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 50
+alignment = 1
+
+[node name="Label2" type="Label" parent="Background/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+theme = ExtResource("1_g18gs")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "Перезапустить"
+
+[node name="Label" type="Label" parent="Background/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+theme = ExtResource("1_g18gs")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "Выйти"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Background/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Background/VBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 200
+alignment = 1
+
+[node name="Reload" type="TextureButton" parent="Background/VBoxContainer/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+mouse_default_cursor_shape = 2
+shortcut = SubResource("Shortcut_uyed5")
+texture_normal = ExtResource("2_fftue")
+texture_focused = ExtResource("4_vdr8i")
+stretch_mode = 0
+
+[node name="Quit" type="TextureButton" parent="Background/VBoxContainer/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+mouse_default_cursor_shape = 2
+shortcut = SubResource("Shortcut_12dsl")
+texture_normal = ExtResource("2_2qor3")
+texture_focused = ExtResource("6_18m8o")
+stretch_mode = 0
+
+[node name="Control" type="Control" parent="Background/VBoxContainer"]
+layout_mode = 2
+
+[connection signal="pressed" from="Background/VBoxContainer/VBoxContainer/HBoxContainer/Reload" to="." method="_on_reload_pressed"]
+[connection signal="pressed" from="Background/VBoxContainer/VBoxContainer/HBoxContainer/Quit" to="." method="_on_quit_pressed"]

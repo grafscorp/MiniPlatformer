@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bsdinhtibmwr1"
+path="res://.godot/imported/I'm Behind You.mp3-a778ccfa49f4850ed490b9e9bcc60eaf.mp3str"
+
+[deps]
+
+source_file="res://assets/MusicG/I'm Behind You.mp3"
+dest_files=["res://.godot/imported/I'm Behind You.mp3-a778ccfa49f4850ed490b9e9bcc60eaf.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

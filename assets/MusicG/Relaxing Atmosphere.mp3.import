@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b202rvmp5xowe"
+path="res://.godot/imported/Relaxing Atmosphere.mp3-4b5a51a3055fe338183984d368e43e4e.mp3str"
+
+[deps]
+
+source_file="res://assets/MusicG/Relaxing Atmosphere.mp3"
+dest_files=["res://.godot/imported/Relaxing Atmosphere.mp3-4b5a51a3055fe338183984d368e43e4e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

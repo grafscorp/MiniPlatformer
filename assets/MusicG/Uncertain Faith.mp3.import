@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cwndo5h4e03x6"
+path="res://.godot/imported/Uncertain Faith.mp3-e4ec89a93e089db7b7bf64882f732a64.mp3str"
+
+[deps]
+
+source_file="res://assets/MusicG/Uncertain Faith.mp3"
+dest_files=["res://.godot/imported/Uncertain Faith.mp3-e4ec89a93e089db7b7bf64882f732a64.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

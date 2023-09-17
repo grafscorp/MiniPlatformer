@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cn64k261t7tni"
+path="res://.godot/imported/Winter Charm.mp3-e43f1280ab154ca6d290ae6742595801.mp3str"
+
+[deps]
+
+source_file="res://assets/MusicG/Winter Charm.mp3"
+dest_files=["res://.godot/imported/Winter Charm.mp3-e43f1280ab154ca6d290ae6742595801.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

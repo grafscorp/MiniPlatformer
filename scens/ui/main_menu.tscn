@@ -1,0 +1,566 @@
+[gd_scene load_steps=76 format=3 uid="uid://bwy6io2myp7ry"]
+
+[ext_resource type="Script" path="res://scripts/main_menu.gd" id="1_kg0wo"]
+[ext_resource type="Texture2D" uid="uid://b0vr3h3v16p8l" path="res://assets/Menu/Buttons/Play.png" id="1_rp5hp"]
+[ext_resource type="Texture2D" uid="uid://bfhdswqtp4io6" path="res://assets/Menu/Buttons/Levels.png" id="2_qfe8n"]
+[ext_resource type="Texture2D" uid="uid://dhm1ioi6mpc6q" path="res://assets/GameBackGround/parallax-mountain-bg.png" id="2_wjml2"]
+[ext_resource type="Texture2D" uid="uid://deky822jc3g5e" path="res://assets/Menu/Buttons/Settings.png" id="3_ih4ym"]
+[ext_resource type="Texture2D" uid="uid://7udaf4uuemj4" path="res://assets/Menu/Buttons/Previous.png" id="3_l7xvl"]
+[ext_resource type="Texture2D" uid="uid://bkhp7lbi2f3ub" path="res://assets/Menu/Buttons/Next.png" id="3_xjngj"]
+[ext_resource type="Texture2D" uid="uid://dct7kxo8ev01h" path="res://assets/Menu/Buttons/PreviousFocused.png" id="4_hqxna"]
+[ext_resource type="Texture2D" uid="uid://dhcyoifnt202q" path="res://assets/Main Characters/Mask Dude/Idle (32x32).png" id="4_tr40f"]
+[ext_resource type="Texture2D" uid="uid://bqq8hjhymiva2" path="res://assets/Menu/Buttons/Close.png" id="5_cpwa6"]
+[ext_resource type="Texture2D" uid="uid://dcdg72xka7xgm" path="res://assets/Main Characters/Ninja Frog/Idle (32x32).png" id="5_fgn6f"]
+[ext_resource type="Texture2D" uid="uid://cuw3jb3thkfn3" path="res://assets/Main Characters/Pink Man/Idle (32x32).png" id="6_okwn5"]
+[ext_resource type="Texture2D" uid="uid://c7jedxsisd62t" path="res://assets/Menu/Buttons/Leaderboard.png" id="7_j5ykg"]
+[ext_resource type="Texture2D" uid="uid://d3lml4hrltvxg" path="res://assets/Main Characters/Virtual Guy/Idle (32x32).png" id="7_tt2hv"]
+[ext_resource type="Texture2D" uid="uid://d1sndyw5wsqhf" path="res://assets/Menu/Buttons/PlayFocused.png" id="9_cdt0o"]
+[ext_resource type="Theme" uid="uid://bok88wi1j82nj" path="res://themes/main_theme.tres" id="9_g345q"]
+[ext_resource type="Texture2D" uid="uid://b8ofmxns2lg08" path="res://assets/Menu/Buttons/NextFocused.png" id="9_nnbcx"]
+[ext_resource type="Texture2D" uid="uid://cj4m1p34760sj" path="res://assets/Menu/Buttons/LevelsFocused.png" id="14_duslf"]
+[ext_resource type="Texture2D" uid="uid://bpbguoqu4w1o" path="res://assets/Menu/Buttons/AchievementFocused.png" id="16_1ehni"]
+[ext_resource type="Texture2D" uid="uid://5rxunuyea2wf" path="res://assets/Menu/Buttons/SettingsFocused.png" id="18_2ddmx"]
+[ext_resource type="Texture2D" uid="uid://dki7vwchnsloi" path="res://assets/Menu/Buttons/CloseFocused.png" id="20_fdmos"]
+
+[sub_resource type="InputEventJoypadButton" id="InputEventJoypadButton_7cos0"]
+device = -1
+button_index = 9
+
+[sub_resource type="Shortcut" id="Shortcut_ypd0e"]
+events = [SubResource("InputEventJoypadButton_7cos0")]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nfxie"]
+atlas = ExtResource("4_tr40f")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5xx1o"]
+atlas = ExtResource("4_tr40f")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c3ro3"]
+atlas = ExtResource("4_tr40f")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nyqem"]
+atlas = ExtResource("4_tr40f")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ykxbn"]
+atlas = ExtResource("4_tr40f")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kb3ac"]
+atlas = ExtResource("4_tr40f")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bgd08"]
+atlas = ExtResource("4_tr40f")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h7j3u"]
+atlas = ExtResource("4_tr40f")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hpf3s"]
+atlas = ExtResource("4_tr40f")
+region = Rect2(256, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2osc6"]
+atlas = ExtResource("4_tr40f")
+region = Rect2(320, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u8yb8"]
+atlas = ExtResource("5_fgn6f")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_awku0"]
+atlas = ExtResource("5_fgn6f")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_320eg"]
+atlas = ExtResource("5_fgn6f")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xnw6s"]
+atlas = ExtResource("5_fgn6f")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cverl"]
+atlas = ExtResource("5_fgn6f")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_olrl1"]
+atlas = ExtResource("5_fgn6f")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tpi7e"]
+atlas = ExtResource("5_fgn6f")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_88i2n"]
+atlas = ExtResource("5_fgn6f")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4sho6"]
+atlas = ExtResource("5_fgn6f")
+region = Rect2(256, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bxkly"]
+atlas = ExtResource("5_fgn6f")
+region = Rect2(288, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ht45b"]
+atlas = ExtResource("5_fgn6f")
+region = Rect2(320, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_81aa8"]
+atlas = ExtResource("6_okwn5")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bbote"]
+atlas = ExtResource("6_okwn5")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5wqvs"]
+atlas = ExtResource("6_okwn5")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ulu84"]
+atlas = ExtResource("6_okwn5")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6de54"]
+atlas = ExtResource("6_okwn5")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xk71v"]
+atlas = ExtResource("6_okwn5")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8rfha"]
+atlas = ExtResource("6_okwn5")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ylel0"]
+atlas = ExtResource("6_okwn5")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wucfd"]
+atlas = ExtResource("6_okwn5")
+region = Rect2(256, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qexnh"]
+atlas = ExtResource("6_okwn5")
+region = Rect2(288, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4desy"]
+atlas = ExtResource("6_okwn5")
+region = Rect2(320, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hdmr8"]
+atlas = ExtResource("7_tt2hv")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kkefm"]
+atlas = ExtResource("7_tt2hv")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5kfll"]
+atlas = ExtResource("7_tt2hv")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s7jhs"]
+atlas = ExtResource("7_tt2hv")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kdiys"]
+atlas = ExtResource("7_tt2hv")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1p8ff"]
+atlas = ExtResource("7_tt2hv")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d5k3y"]
+atlas = ExtResource("7_tt2hv")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mreu8"]
+atlas = ExtResource("7_tt2hv")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sh8mc"]
+atlas = ExtResource("7_tt2hv")
+region = Rect2(256, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yry86"]
+atlas = ExtResource("7_tt2hv")
+region = Rect2(288, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dp73u"]
+atlas = ExtResource("7_tt2hv")
+region = Rect2(320, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5xor6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nfxie")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5xx1o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c3ro3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nyqem")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ykxbn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kb3ac")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bgd08")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h7j3u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hpf3s")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2osc6")
+}],
+"loop": true,
+"name": &"dude",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u8yb8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_awku0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_320eg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xnw6s")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cverl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_olrl1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tpi7e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_88i2n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4sho6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bxkly")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ht45b")
+}],
+"loop": true,
+"name": &"ninja",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_81aa8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bbote")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5wqvs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ulu84")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6de54")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xk71v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8rfha")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ylel0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wucfd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qexnh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4desy")
+}],
+"loop": true,
+"name": &"pink",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hdmr8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kkefm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5kfll")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s7jhs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kdiys")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1p8ff")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d5k3y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mreu8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sh8mc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yry86")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dp73u")
+}],
+"loop": true,
+"name": &"vr",
+"speed": 5.0
+}]
+
+[sub_resource type="InputEventJoypadButton" id="InputEventJoypadButton_ncsqx"]
+device = -1
+button_index = 10
+pressed = true
+
+[sub_resource type="Shortcut" id="Shortcut_ec7al"]
+events = [SubResource("InputEventJoypadButton_ncsqx")]
+
+[sub_resource type="InputEventJoypadButton" id="InputEventJoypadButton_73xvd"]
+button_index = 2
+pressed = true
+
+[sub_resource type="Shortcut" id="Shortcut_75pwo"]
+events = [SubResource("InputEventJoypadButton_73xvd")]
+
+[sub_resource type="InputEventJoypadButton" id="InputEventJoypadButton_hqh1f"]
+button_index = 4
+pressed = true
+
+[sub_resource type="Shortcut" id="Shortcut_cwrtd"]
+events = [SubResource("InputEventJoypadButton_hqh1f")]
+
+[sub_resource type="InputEventJoypadButton" id="InputEventJoypadButton_dtrk0"]
+device = -1
+button_index = 6
+pressed = true
+
+[sub_resource type="Shortcut" id="Shortcut_dwnh5"]
+events = [SubResource("InputEventJoypadButton_dtrk0")]
+
+[node name="main_menu" type="Control" node_paths=PackedStringArray("skin_preview", "music", "lvlLavel", "playBTN")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_kg0wo")
+skin_preview = NodePath("PlayBUTTONS/VBoxContainer/HBoxContainer2/SkinPrewie")
+music = NodePath("Music")
+lvlLavel = NodePath("PlayBUTTONS/VBoxContainer/HBoxContainer/VBoxContainer/Label")
+playBTN = NodePath("PlayBUTTONS/VBoxContainer/HBoxContainer/VBoxContainer/PlayBTN")
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_wjml2")
+
+[node name="PlayBUTTONS" type="BoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PlayBUTTONS"]
+layout_mode = 2
+theme_override_constants/separation = 120
+alignment = 1
+
+[node name="Control" type="Control" parent="PlayBUTTONS/VBoxContainer"]
+layout_mode = 2
+
+[node name="Control2" type="Control" parent="PlayBUTTONS/VBoxContainer"]
+layout_mode = 2
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="PlayBUTTONS/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 400
+alignment = 1
+
+[node name="BackSkin" type="TextureButton" parent="PlayBUTTONS/VBoxContainer/HBoxContainer2"]
+custom_minimum_size = Vector2(84, 84)
+layout_mode = 2
+mouse_default_cursor_shape = 2
+shortcut = SubResource("Shortcut_ypd0e")
+texture_normal = ExtResource("3_l7xvl")
+texture_focused = ExtResource("4_hqxna")
+stretch_mode = 0
+
+[node name="SkinPrewie" type="AnimatedSprite2D" parent="PlayBUTTONS/VBoxContainer/HBoxContainer2"]
+position = Vector2(340, 0)
+scale = Vector2(5, 5)
+sprite_frames = SubResource("SpriteFrames_5xor6")
+animation = &"dude"
+
+[node name="NextSkin" type="TextureButton" parent="PlayBUTTONS/VBoxContainer/HBoxContainer2"]
+custom_minimum_size = Vector2(84, 84)
+layout_mode = 2
+mouse_default_cursor_shape = 2
+shortcut = SubResource("Shortcut_ec7al")
+texture_normal = ExtResource("3_xjngj")
+texture_focused = ExtResource("9_nnbcx")
+stretch_mode = 0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PlayBUTTONS/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 200
+alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PlayBUTTONS/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="PlayBTN" type="TextureButton" parent="PlayBUTTONS/VBoxContainer/HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(84, 84)
+layout_mode = 2
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("1_rp5hp")
+texture_focused = ExtResource("9_cdt0o")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="PlayBUTTONS/VBoxContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("9_g345q")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "0 Lvl"
+horizontal_alignment = 1
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="PlayBUTTONS/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="LevelsBTN" type="TextureButton" parent="PlayBUTTONS/VBoxContainer/HBoxContainer/VBoxContainer2"]
+custom_minimum_size = Vector2(84, 84)
+layout_mode = 2
+mouse_default_cursor_shape = 2
+shortcut = SubResource("Shortcut_75pwo")
+texture_normal = ExtResource("2_qfe8n")
+texture_focused = ExtResource("14_duslf")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="PlayBUTTONS/VBoxContainer/HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+theme = ExtResource("9_g345q")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Levels"
+horizontal_alignment = 1
+
+[node name="VBoxContainer3" type="VBoxContainer" parent="PlayBUTTONS/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="SkinBTN" type="TextureButton" parent="PlayBUTTONS/VBoxContainer/HBoxContainer/VBoxContainer3"]
+custom_minimum_size = Vector2(84, 84)
+layout_mode = 2
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("7_j5ykg")
+texture_focused = ExtResource("16_1ehni")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="PlayBUTTONS/VBoxContainer/HBoxContainer/VBoxContainer3"]
+layout_mode = 2
+theme = ExtResource("9_g345q")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Advent"
+horizontal_alignment = 1
+
+[node name="MENBUTTONS" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -268.0
+offset_bottom = 84.0
+grow_horizontal = 0
+theme_override_constants/separation = 50
+alignment = 2
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="MENBUTTONS"]
+layout_mode = 2
+theme_override_constants/separation = 100
+alignment = 2
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="MENBUTTONS"]
+layout_mode = 2
+theme_override_constants/separation = 100
+alignment = 2
+
+[node name="SettingBTN" type="TextureButton" parent="MENBUTTONS/HBoxContainer3"]
+custom_minimum_size = Vector2(84, 84)
+layout_mode = 2
+mouse_default_cursor_shape = 2
+shortcut = SubResource("Shortcut_cwrtd")
+texture_normal = ExtResource("3_ih4ym")
+texture_focused = ExtResource("18_2ddmx")
+stretch_mode = 0
+
+[node name="QUITBTN" type="TextureButton" parent="MENBUTTONS/HBoxContainer3"]
+custom_minimum_size = Vector2(84, 84)
+layout_mode = 2
+mouse_default_cursor_shape = 2
+shortcut = SubResource("Shortcut_dwnh5")
+texture_normal = ExtResource("5_cpwa6")
+texture_focused = ExtResource("20_fdmos")
+stretch_mode = 0
+
+[node name="Control" type="Control" parent="MENBUTTONS/HBoxContainer3"]
+layout_mode = 2
+
+[node name="Music" type="AudioStreamPlayer" parent="."]
+
+[connection signal="pressed" from="PlayBUTTONS/VBoxContainer/HBoxContainer2/BackSkin" to="." method="_on_back_skin_pressed"]
+[connection signal="pressed" from="PlayBUTTONS/VBoxContainer/HBoxContainer2/NextSkin" to="." method="_on_next_skin_pressed"]
+[connection signal="pressed" from="PlayBUTTONS/VBoxContainer/HBoxContainer/VBoxContainer/PlayBTN" to="." method="_on_play_btn_pressed"]
+[connection signal="pressed" from="PlayBUTTONS/VBoxContainer/HBoxContainer/VBoxContainer2/LevelsBTN" to="." method="_on_levels_btn_pressed"]
+[connection signal="pressed" from="MENBUTTONS/HBoxContainer3/QUITBTN" to="." method="_on_quitbtn_pressed"]
+[connection signal="finished" from="Music" to="." method="_on_music_finished"]

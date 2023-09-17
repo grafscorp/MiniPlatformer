@@ -1,0 +1,10 @@
+res://scens/ui/main_menu.tscn
+res://scens/Player/player.tscn
+res://scens/root.tscn
+res://scens/ui/quit_menu.tscn
+res://scens/ui/hud.tscn
+res://scens/LVLS/lvl1.tscn
+res://scens/TRAPS/chain.tscn
+res://scens/ui/reload_menu.tscn
+res://scens/ui/level_menu.tscn
+res://scens/TRAPS/spikes.tscn

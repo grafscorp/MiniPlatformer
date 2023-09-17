@@ -1,0 +1,6 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://bok88wi1j82nj"]
+
+[ext_resource type="FontFile" uid="uid://cqgpmlhiaie6m" path="res://themes/fonst/better-vcr_0.ttf" id="1_svoiv"]
+
+[resource]
+default_font = ExtResource("1_svoiv")

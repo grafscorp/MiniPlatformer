@@ -1,0 +1,84 @@
+[gd_scene load_steps=8 format=3 uid="uid://bse1qr1ls8aju"]
+
+[ext_resource type="Texture2D" uid="uid://dhm1ioi6mpc6q" path="res://assets/GameBackGround/parallax-mountain-bg.png" id="1_8q3p4"]
+[ext_resource type="Script" path="res://scripts/level_menu.gd" id="1_yehey"]
+[ext_resource type="Texture2D" uid="uid://c4m06pph3tnoc" path="res://assets/Menu/Buttons/BackFocused.png" id="4_odyhk"]
+[ext_resource type="Texture2D" uid="uid://bxwp5g51q7t2j" path="res://assets/Menu/Buttons/Back.png" id="6_7qxh4"]
+
+[sub_resource type="InputEventJoypadButton" id="InputEventJoypadButton_uysay"]
+button_index = 6
+pressed = true
+
+[sub_resource type="InputEventJoypadButton" id="InputEventJoypadButton_id0xb"]
+device = -1
+button_index = 1
+pressed = true
+
+[sub_resource type="Shortcut" id="Shortcut_xgpew"]
+events = [SubResource("InputEventJoypadButton_uysay"), SubResource("InputEventJoypadButton_id0xb")]
+
+[node name="LevelMenu" type="Control" node_paths=PackedStringArray("grid")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_yehey")
+grid = NodePath("GridContainer")
+
+[node name="BackGround" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_8q3p4")
+expand_mode = 1
+
+[node name="GridContainer" type="GridContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+columns = 10
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -162.0
+offset_bottom = 86.0
+grow_horizontal = 0
+theme_override_constants/separation = 50
+
+[node name="Control" type="Control" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 80
+
+[node name="BackBTN" type="TextureButton" parent="VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(82, 82)
+layout_mode = 2
+mouse_default_cursor_shape = 2
+shortcut = SubResource("Shortcut_xgpew")
+texture_normal = ExtResource("6_7qxh4")
+texture_focused = ExtResource("4_odyhk")
+stretch_mode = 0
+
+[node name="Control" type="Control" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/BackBTN" to="." method="_on_back_btn_pressed"]

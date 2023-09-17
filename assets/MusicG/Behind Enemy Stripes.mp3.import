@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ya1njjyh4idc"
+path="res://.godot/imported/Behind Enemy Stripes.mp3-713df6fa33c112823a92934a1e663f22.mp3str"
+
+[deps]
+
+source_file="res://assets/MusicG/Behind Enemy Stripes.mp3"
+dest_files=["res://.godot/imported/Behind Enemy Stripes.mp3-713df6fa33c112823a92934a1e663f22.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

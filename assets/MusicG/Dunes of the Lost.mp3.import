@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dubnmaj7jjbc0"
+path="res://.godot/imported/Dunes of the Lost.mp3-cf152b1c6ca580cab904e683224c992b.mp3str"
+
+[deps]
+
+source_file="res://assets/MusicG/Dunes of the Lost.mp3"
+dest_files=["res://.godot/imported/Dunes of the Lost.mp3-cf152b1c6ca580cab904e683224c992b.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

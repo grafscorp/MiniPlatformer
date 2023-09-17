@@ -1,0 +1,118 @@
+[gd_scene load_steps=11 format=3 uid="uid://b6cowptvieu1"]
+
+[ext_resource type="Script" path="res://scripts/exit_menu.gd" id="1_4w360"]
+[ext_resource type="Theme" uid="uid://bok88wi1j82nj" path="res://themes/main_theme.tres" id="2_6x4lw"]
+[ext_resource type="Texture2D" uid="uid://bqq8hjhymiva2" path="res://assets/Menu/Buttons/Close.png" id="3_d75wt"]
+[ext_resource type="Texture2D" uid="uid://dki7vwchnsloi" path="res://assets/Menu/Buttons/CloseFocused.png" id="4_fx4c3"]
+[ext_resource type="Texture2D" uid="uid://bxwp5g51q7t2j" path="res://assets/Menu/Buttons/Back.png" id="4_og638"]
+[ext_resource type="Texture2D" uid="uid://c4m06pph3tnoc" path="res://assets/Menu/Buttons/BackFocused.png" id="6_bwmel"]
+
+[sub_resource type="InputEventJoypadButton" id="InputEventJoypadButton_rc778"]
+button_index = 2
+pressed = true
+
+[sub_resource type="Shortcut" id="Shortcut_k3u8o"]
+events = [SubResource("InputEventJoypadButton_rc778")]
+
+[sub_resource type="InputEventJoypadButton" id="InputEventJoypadButton_p067w"]
+button_index = 1
+pressed = true
+
+[sub_resource type="Shortcut" id="Shortcut_02y8x"]
+events = [SubResource("InputEventJoypadButton_p067w")]
+
+[node name="QuitMenu" type="Control" node_paths=PackedStringArray("quitBTN")]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_4w360")
+quitBTN = NodePath("Background/VBoxContainer/HBoxContainer3/TextureButton")
+
+[node name="Background" type="ColorRect" parent="."]
+custom_minimum_size = Vector2(500, 400)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Background"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="Label" type="Label" parent="Background/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("2_6x4lw")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 50
+text = "Вы уверены?"
+horizontal_alignment = 1
+
+[node name="Control2" type="Control" parent="Background/VBoxContainer"]
+layout_mode = 2
+
+[node name="Control3" type="Control" parent="Background/VBoxContainer"]
+layout_mode = 2
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="Background/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 200
+alignment = 1
+
+[node name="Label" type="Label" parent="Background/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+theme = ExtResource("2_6x4lw")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "Выйти"
+
+[node name="Label2" type="Label" parent="Background/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+theme = ExtResource("2_6x4lw")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 28
+text = "Отмена"
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="Background/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 200
+alignment = 1
+
+[node name="TextureButton" type="TextureButton" parent="Background/VBoxContainer/HBoxContainer3"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+shortcut = SubResource("Shortcut_k3u8o")
+texture_normal = ExtResource("3_d75wt")
+texture_focused = ExtResource("4_fx4c3")
+stretch_mode = 0
+
+[node name="cancelBTN" type="TextureButton" parent="Background/VBoxContainer/HBoxContainer3"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+shortcut = SubResource("Shortcut_02y8x")
+texture_normal = ExtResource("4_og638")
+texture_focused = ExtResource("6_bwmel")
+stretch_mode = 0
+
+[node name="Control" type="Control" parent="Background/VBoxContainer"]
+layout_mode = 2
+
+[connection signal="pressed" from="Background/VBoxContainer/HBoxContainer3/TextureButton" to="." method="_on_texture_button_pressed"]
+[connection signal="pressed" from="Background/VBoxContainer/HBoxContainer3/cancelBTN" to="." method="_on_cancel_btn_pressed"]

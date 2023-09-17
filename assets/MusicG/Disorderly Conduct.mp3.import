@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cru4ooyqb4o4b"
+path="res://.godot/imported/Disorderly Conduct.mp3-dd8cfc0c9197ada66495d137cd579cfe.mp3str"
+
+[deps]
+
+source_file="res://assets/MusicG/Disorderly Conduct.mp3"
+dest_files=["res://.godot/imported/Disorderly Conduct.mp3-dd8cfc0c9197ada66495d137cd579cfe.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

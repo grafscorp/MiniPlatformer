@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://chqvyygosufyv"
+path="res://.godot/imported/Dull Meeting.mp3-cbcd4a6846e40824537efeb71188d940.mp3str"
+
+[deps]
+
+source_file="res://assets/MusicG/Dull Meeting.mp3"
+dest_files=["res://.godot/imported/Dull Meeting.mp3-cbcd4a6846e40824537efeb71188d940.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

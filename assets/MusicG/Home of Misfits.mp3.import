@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bry4vbi1hno0d"
+path="res://.godot/imported/Home of Misfits.mp3-7d799e0ef5d19b76ccf25a6c602c4a4b.mp3str"
+
+[deps]
+
+source_file="res://assets/MusicG/Home of Misfits.mp3"
+dest_files=["res://.godot/imported/Home of Misfits.mp3-7d799e0ef5d19b76ccf25a6c602c4a4b.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

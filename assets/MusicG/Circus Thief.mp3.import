@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b7yh2kfofmcob"
+path="res://.godot/imported/Circus Thief.mp3-22a96893aab33ea6d6d791de72dfee50.mp3str"
+
+[deps]
+
+source_file="res://assets/MusicG/Circus Thief.mp3"
+dest_files=["res://.godot/imported/Circus Thief.mp3-22a96893aab33ea6d6d791de72dfee50.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

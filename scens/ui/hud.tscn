@@ -1,0 +1,48 @@
+[gd_scene load_steps=4 format=3 uid="uid://raxwpyj075ga"]
+
+[ext_resource type="Script" path="res://scripts/HUD.gd" id="1_hqesb"]
+[ext_resource type="PackedScene" uid="uid://b1y1vjapxdp0t" path="res://scens/ui/heal.tscn" id="2_rd16w"]
+[ext_resource type="Theme" uid="uid://bok88wi1j82nj" path="res://themes/main_theme.tres" id="3_kknfr"]
+
+[node name="HUD" type="CanvasLayer" node_paths=PackedStringArray("anim1", "anim2", "anim3", "timelbl")]
+script = ExtResource("1_hqesb")
+anim1 = NodePath("heal")
+anim2 = NodePath("heal2")
+anim3 = NodePath("heal3")
+timelbl = NodePath("TimeLBL")
+
+[node name="heal" parent="." instance=ExtResource("2_rd16w")]
+process_mode = 3
+position = Vector2(104, 104)
+animation = &"default"
+
+[node name="heal2" parent="." instance=ExtResource("2_rd16w")]
+process_mode = 3
+position = Vector2(208, 104)
+animation = &"default"
+
+[node name="heal3" parent="." instance=ExtResource("2_rd16w")]
+process_mode = 3
+position = Vector2(312, 104)
+animation = &"default"
+
+[node name="TimeLBL" type="Label" parent="."]
+offset_left = 384.0
+offset_top = 56.0
+offset_right = 984.0
+offset_bottom = 159.0
+theme = ExtResource("3_kknfr")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_y = 7
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 60
+text = "00:00"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Timer" type="Timer" parent="."]
+process_mode = 1
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
