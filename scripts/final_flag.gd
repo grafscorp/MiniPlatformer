@@ -6,6 +6,7 @@ extends Area2D
 func _on_body_entered(body: Node2D) -> void:
 	if body is player:
 		sprite.play("Flaging")
+		body.set_physics_process(false)
 
 func _on_sprite_animation_finished() -> void:
 	if sprite.animation == "Flaging":
