@@ -1,4 +1,6 @@
 res://scripts
+res://scens/Items
+res://assets/Items/Checkpoints/Checkpoint
 res://scens/ui
 res://scens/TRAPS
 res://assets/Traps/Falling Platforms

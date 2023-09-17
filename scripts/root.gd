@@ -25,3 +25,4 @@ func sndplay()->void:
 signal hitPlayer()
 signal PlayerDie()
 signal focusBTN()
+signal Win()

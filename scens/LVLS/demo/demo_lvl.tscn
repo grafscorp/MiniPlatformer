@@ -1,9 +1,10 @@
-[gd_scene load_steps=10 format=3 uid="uid://cunrt5gv1iiyt"]
+[gd_scene load_steps=11 format=3 uid="uid://cunrt5gv1iiyt"]
 
 [ext_resource type="Texture2D" uid="uid://bsw08t6vn134i" path="res://assets/Terrain/Terrain (16x16).png" id="2_barql"]
 [ext_resource type="PackedScene" uid="uid://dym7wmoet3mps" path="res://scens/TRAPS/trampoline.tscn" id="3_f4l3c"]
 [ext_resource type="PackedScene" uid="uid://cxwpf5u2a027t" path="res://scens/Player/player.tscn" id="3_qfibf"]
 [ext_resource type="PackedScene" uid="uid://d1db4b5p6a884" path="res://scens/TRAPS/chain.tscn" id="4_xkdo4"]
+[ext_resource type="PackedScene" uid="uid://jxshiloc8up7" path="res://scens/Items/final_flag.tscn" id="5_x6028"]
 [ext_resource type="PackedScene" uid="uid://gx3x0aaa4ld7" path="res://scens/TRAPS/spikes.tscn" id="5_xlipl"]
 [ext_resource type="PackedScene" uid="uid://bvpusoo6yvsv0" path="res://scens/TRAPS/fall_platform.tscn" id="6_itfly"]
 
@@ -12,6 +13,7 @@ scenes/1/scene = ExtResource("4_xkdo4")
 scenes/2/scene = ExtResource("6_itfly")
 scenes/3/scene = ExtResource("5_xlipl")
 scenes/4/scene = ExtResource("3_f4l3c")
+scenes/5/scene = ExtResource("5_x6028")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_c446l"]
 texture = ExtResource("2_barql")

@@ -9,3 +9,6 @@ res://scens/ui/reload_menu.tscn
 res://scens/ui/level_menu.tscn
 res://scens/TRAPS/spikes.tscn
 res://scens/LVLS/demo/demo_lvl.tscn
+res://scripts/root.gd
+res://scripts/final_flag.gd
+res://scens/Items/final_flag.tscn
