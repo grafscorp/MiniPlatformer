@@ -1,3 +1,4 @@
+ParallaxBackground
 AudioStreamPlayer2D
 Timer
 Control
@@ -5,7 +6,6 @@ VBoxContainer
 Label
 VisibleOnScreenNotifier2D
 ParallaxLayer
-ParallaxBackground
 CanvasLayer
 HBoxContainer
 Node2D

@@ -500,3 +500,5 @@ format = 2
 layer_0/name = "main"
 
 [node name="Player" parent="." instance=ExtResource("3_qfibf")]
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
