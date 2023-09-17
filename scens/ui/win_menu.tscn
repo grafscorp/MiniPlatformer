@@ -1,0 +1,115 @@
+[gd_scene load_steps=11 format=3 uid="uid://bn2xyd8xfg5eg"]
+
+[ext_resource type="Theme" uid="uid://bok88wi1j82nj" path="res://themes/main_theme.tres" id="1_88c8b"]
+[ext_resource type="Script" path="res://scripts/win_menu.gd" id="1_fmtve"]
+[ext_resource type="Texture2D" uid="uid://bkhp7lbi2f3ub" path="res://assets/Menu/Buttons/Next.png" id="2_7qx0s"]
+[ext_resource type="Texture2D" uid="uid://b8ofmxns2lg08" path="res://assets/Menu/Buttons/NextFocused.png" id="3_rc1a2"]
+[ext_resource type="Texture2D" uid="uid://bqq8hjhymiva2" path="res://assets/Menu/Buttons/Close.png" id="4_5cxbu"]
+[ext_resource type="Texture2D" uid="uid://dki7vwchnsloi" path="res://assets/Menu/Buttons/CloseFocused.png" id="5_y52xq"]
+
+[sub_resource type="InputEventJoypadButton" id="InputEventJoypadButton_4hqfj"]
+device = -1
+button_index = 2
+pressed = true
+
+[sub_resource type="Shortcut" id="Shortcut_qdr73"]
+events = [SubResource("InputEventJoypadButton_4hqfj")]
+
+[sub_resource type="InputEventJoypadButton" id="InputEventJoypadButton_vqqn8"]
+button_index = 1
+pressed = true
+
+[sub_resource type="Shortcut" id="Shortcut_hmeae"]
+events = [SubResource("InputEventJoypadButton_vqqn8")]
+
+[node name="WinMenu" type="CanvasLayer"]
+script = ExtResource("1_fmtve")
+
+[node name="Background" type="ColorRect" parent="."]
+process_mode = 3
+custom_minimum_size = Vector2(500, 400)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Background"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 50
+alignment = 1
+
+[node name="Control2" type="Control" parent="Background/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Background/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("1_88c8b")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 50
+text = "Победа?"
+horizontal_alignment = 1
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="Background/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 50
+alignment = 1
+
+[node name="Label2" type="Label" parent="Background/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+theme = ExtResource("1_88c8b")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "След. 
+Уровень"
+
+[node name="Label" type="Label" parent="Background/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+theme = ExtResource("1_88c8b")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "Выйти"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Background/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Background/VBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 100
+alignment = 1
+
+[node name="NextLVL" type="TextureButton" parent="Background/VBoxContainer/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+mouse_default_cursor_shape = 2
+shortcut = SubResource("Shortcut_qdr73")
+texture_normal = ExtResource("2_7qx0s")
+texture_focused = ExtResource("3_rc1a2")
+stretch_mode = 0
+
+[node name="Quit" type="TextureButton" parent="Background/VBoxContainer/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+mouse_default_cursor_shape = 2
+shortcut = SubResource("Shortcut_hmeae")
+texture_normal = ExtResource("4_5cxbu")
+texture_focused = ExtResource("5_y52xq")
+stretch_mode = 0
+
+[node name="Control" type="Control" parent="Background/VBoxContainer"]
+layout_mode = 2
+
+[connection signal="pressed" from="Background/VBoxContainer/VBoxContainer/HBoxContainer/NextLVL" to="." method="_on_next_lvl_pressed"]
+[connection signal="pressed" from="Background/VBoxContainer/VBoxContainer/HBoxContainer/Quit" to="." method="_on_quit_pressed"]
