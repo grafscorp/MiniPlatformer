@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://cl5s00rj6t8op"]
+
+[ext_resource type="PackedScene" uid="uid://cunrt5gv1iiyt" path="res://scens/LVLS/demo/demo_lvl.tscn" id="1_iw78d"]
+
+[node name="lvl3" type="Node2D"]
+
+[node name="DemoLVL" parent="." instance=ExtResource("1_iw78d")]
+
+[node name="Platform" parent="DemoLVL" index="0"]
+layer_0/tile_data = PackedInt32Array(65554, 1245186, 1, 65553, 1179650, 1, 65552, 1179650, 1, 65551, 1179650, 1, 65550, 1179650, 1, 65549, 1179650, 1, 65548, 1179650, 1, 65547, 1179650, 1, 65546, 1179650, 1, 65545, 1179650, 1, 65544, 1179650, 1, 65543, 1179650, 1, 65542, 1179650, 1, 65541, 1179650, 1, 65540, 1179650, 1, 65539, 1179650, 1, 65538, 1179650, 1, 65537, 1179650, 1, 65536, 1179650, 1, 131071, 1179650, 1, 131070, 1179650, 1, 131069, 1179650, 1, 131068, 1179650, 1, 131067, 1179650, 1, 131066, 1179650, 1, 131065, 1114114, 1)
+
+[editable path="DemoLVL"]

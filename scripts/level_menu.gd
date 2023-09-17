@@ -12,6 +12,8 @@ func _ready() -> void:
 		btn.custom_minimum_size.x = 60
 		btn.custom_minimum_size.y = 60
 		grid.add_child(btn)
+		if i == 1:
+			btn.grab_focus()
 		btn.pressed.connect(_lvlbtn_pressed.bind(i))
 
 func _on_back_btn_pressed() -> void:

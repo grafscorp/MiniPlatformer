@@ -1,3 +1,5 @@
+TouchScreenButton
+TextureButton
 CanvasLayer
 CollisionShape2D
 AnimatedSprite2D
@@ -15,7 +17,6 @@ Node2D
 Sprite2D
 GridContainer
 Button
-TextureButton
 AnimationPlayer
 StaticBody2D
 AnimationTree

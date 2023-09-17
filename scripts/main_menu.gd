@@ -7,6 +7,7 @@ extends Control
 @export var lvlLavel : Label
 @export var playBTN : TextureButton
 func  _ready() -> void:
+	
 	_update_lvl_label()
 	playMusic()
 	Root.mode = Root.MENU_MODE

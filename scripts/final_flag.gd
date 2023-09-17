@@ -6,7 +6,6 @@ extends Area2D
 func _on_body_entered(body: Node2D) -> void:
 	if body is player:
 		sprite.play("Flaging")
-		body.set_physics_process(false)
 
 func _on_sprite_animation_finished() -> void:
 	if sprite.animation == "Flaging":
@@ -14,3 +13,5 @@ func _on_sprite_animation_finished() -> void:
 		Root.Win.emit()
 		get_tree().paused = true
 		add_child(win_menu.instantiate())
+		if Root.currect_level < 50:
+			Root.currect_level += 1
