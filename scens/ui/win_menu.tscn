@@ -22,8 +22,9 @@ pressed = true
 [sub_resource type="Shortcut" id="Shortcut_hmeae"]
 events = [SubResource("InputEventJoypadButton_vqqn8")]
 
-[node name="WinMenu" type="CanvasLayer"]
+[node name="WinMenu" type="CanvasLayer" node_paths=PackedStringArray("nextBTN")]
 script = ExtResource("1_fmtve")
+nextBTN = NodePath("Background/VBoxContainer/VBoxContainer/HBoxContainer/NextLVL")
 
 [node name="Background" type="ColorRect" parent="."]
 process_mode = 3
