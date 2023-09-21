@@ -13,4 +13,5 @@ func _on_sprite_animation_finished() -> void:
 		Root.Win.emit()
 		get_tree().paused = true
 		add_child(win_menu.instantiate())
-
+		if Root.currect_level < 50:
+			Root.currect_level += 1
