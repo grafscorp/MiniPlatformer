@@ -1,5 +1,5 @@
 fc8a56933c4b1c8d796fdb8f7a9f9475
-::res://::1694981352
+::res://::1696599154
 export_presets.cfg::TextFile::-1::1694977667::0::1::::<><>::
 icon.svg::CompressedTexture2D::6834629339051999678::1694799424::1694799431::1::::<><>::
 README.md::TextFile::-1::1694955276::0::1::::<><>::
@@ -98,12 +98,12 @@ lvl.png::CompressedTexture2D::2199713403742220359::1694901168::1694901177::1::::
 ::res://assets/Menu/Text/::1694799497
 Text (Black) (8x10).png::CompressedTexture2D::7490704392784629679::1694799496::1694799497::1::::<><>::
 Text (White) (8x10).png::CompressedTexture2D::1695173400680067176::1694799496::1694799497::1::::<><>::
-::res://assets/Music/::1694821211
-menu1.mp3::AudioStreamMP3::3480145936847230772::1694820532::1694821010::1::::<><>::
-menu2.mp3::AudioStreamMP3::7434041648859080492::1694820532::1694821211::1::::<><>::
-menu3.mp3::AudioStreamMP3::546797481729110096::1694820532::1694821211::1::::<><>::
-menu4.mp3::AudioStreamMP3::4043745076171735876::1694820532::1694821211::1::::<><>::
-menu5.mp3::AudioStreamMP3::2231561768088011968::1694820532::1694821211::1::::<><>::
+::res://assets/Music/::1695046040
+menu1.mp3::AudioStreamMP3::3480145936847230772::1694820532::1695046040::1::::<><>::
+menu2.mp3::AudioStreamMP3::7434041648859080492::1694820532::1695046040::1::::<><>::
+menu3.mp3::AudioStreamMP3::546797481729110096::1694820532::1695046040::1::::<><>::
+menu4.mp3::AudioStreamMP3::4043745076171735876::1694820532::1695046040::1::::<><>::
+menu5.mp3::AudioStreamMP3::2231561768088011968::1694820532::1695046040::1::::<><>::
 ::res://assets/MusicG/::1694821211
 1.mp3::AudioStreamMP3::1086046153052136115::1694820554::1694821211::1::::<><>::
 2.mp3::AudioStreamMP3::721615750474475367::1694820554::1694821211::1::::<><>::
@@ -201,18 +201,18 @@ Idle.png::CompressedTexture2D::8535530751871648460::1694799496::1694799497::1:::
 Idle.png::CompressedTexture2D::4514064377512287420::1694799496::1694799497::1::::<><>::
 Jump (28x28).png::CompressedTexture2D::5440764064230316501::1694799496::1694799497::1::::<><>::
 ::res://DEBUG/::1694981084
-::res://scens/::1694981046
-root.tscn::PackedScene::5251433285652277131::1694981046::0::1::::<><>::res://scripts/root.gd<>uid://bk5cmoxbdsqme::::res://assets/Sounds/22263.mp3
-::res://scens/Items/::1694978157
-final_flag.tscn::PackedScene::680286125332535958::1694978157::0::1::::<><>::uid://cwfgd02s10k0k::::res://assets/Items/Checkpoints/Checkpoint/Checkpoint (Flag Idle)(64x64).png<>res://scripts/final_flag.gd<>uid://bpai14co6ppu2::::res://assets/Items/Checkpoints/Checkpoint/Checkpoint (Flag Out) (64x64).png<>uid://h3a2yo6fumpm::::res://assets/Items/Checkpoints/Checkpoint/Checkpoint (No Flag).png
-::res://scens/LVLS/::1694981047
-lvl1.tscn::PackedScene::434848500742730771::1694978157::0::1::::<><>::uid://cunrt5gv1iiyt::::res://scens/LVLS/demo/demo_lvl.tscn<>uid://dhm1ioi6mpc6q::::res://assets/GameBackGround/parallax-mountain-bg.png<>uid://dw80ywh4oh8xw::::res://assets/GameBackGround/parallax-mountain-foreground-trees.png<>uid://c5j65nisc5e28::::res://assets/GameBackGround/parallax-mountain-montain-far.png<>uid://ddfuoh8wg7gkr::::res://assets/GameBackGround/parallax-mountain-mountains.png<>uid://cdd4np4k0f33g::::res://assets/GameBackGround/parallax-mountain-trees.png
-lvl2.tscn::PackedScene::4147656291794129669::1694981047::0::1::::<><>::uid://cunrt5gv1iiyt::::res://scens/LVLS/demo/demo_lvl.tscn
-lvl3.tscn::PackedScene::5607988870540329687::1694981047::0::1::::<><>::uid://cunrt5gv1iiyt::::res://scens/LVLS/demo/demo_lvl.tscn
-::res://scens/LVLS/demo/::1694981046
-demo_lvl.tscn::PackedScene::6204522855869393763::1694981046::0::1::::<><>::uid://bsw08t6vn134i::::res://assets/Terrain/Terrain (16x16).png<>uid://dym7wmoet3mps::::res://scens/TRAPS/trampoline.tscn<>uid://cxwpf5u2a027t::::res://scens/Player/player.tscn<>uid://d1db4b5p6a884::::res://scens/TRAPS/chain.tscn<>uid://jxshiloc8up7::::res://scens/Items/final_flag.tscn<>uid://gx3x0aaa4ld7::::res://scens/TRAPS/spikes.tscn<>uid://bvpusoo6yvsv0::::res://scens/TRAPS/fall_platform.tscn
-::res://scens/Player/::1694981046
-player.tscn::PackedScene::6433522373335647463::1694981046::0::1::::<><>::res://scripts/player.gd<>uid://dcrr1nw1scuh7::::res://scens/Player/skins/dude.png<>uid://raxwpyj075ga::::res://scens/ui/hud.tscn<>uid://jc472dmu2aka::::res://assets/Main Characters/Appearing (96x96).png<>uid://be3avigteglg2::::res://assets/Main Characters/Desappearing (96x96).png<>uid://mdswcckd6kqi::::res://scens/Player/sounds/JumpSND.mp3<>uid://cn3ukdd4bxc33::::res://scens/Player/sounds/DeatthSND.mp3<>uid://by3mhu32ip7qc::::res://scens/Player/sounds/HitSND.mp3
+::res://scens/::1696510904
+root.tscn::PackedScene::5251433285652277131::1696510904::0::1::::<><>::res://scripts/root.gd<>uid://bk5cmoxbdsqme::::res://assets/Sounds/22263.mp3
+::res://scens/Items/::1696510073
+final_flag.tscn::PackedScene::680286125332535958::1696510073::0::1::::<><>::uid://cwfgd02s10k0k::::res://assets/Items/Checkpoints/Checkpoint/Checkpoint (Flag Idle)(64x64).png<>res://scripts/final_flag.gd<>uid://bpai14co6ppu2::::res://assets/Items/Checkpoints/Checkpoint/Checkpoint (Flag Out) (64x64).png<>uid://h3a2yo6fumpm::::res://assets/Items/Checkpoints/Checkpoint/Checkpoint (No Flag).png
+::res://scens/LVLS/::1696510904
+lvl1.tscn::PackedScene::434848500742730771::1696510904::0::1::::<><>::uid://cunrt5gv1iiyt::::res://scens/LVLS/demo/demo_lvl.tscn<>uid://dhm1ioi6mpc6q::::res://assets/GameBackGround/parallax-mountain-bg.png<>uid://bpt2q3mmjp6ya::::res://assets/Music/menu1.mp3<>uid://dw80ywh4oh8xw::::res://assets/GameBackGround/parallax-mountain-foreground-trees.png<>uid://c5j65nisc5e28::::res://assets/GameBackGround/parallax-mountain-montain-far.png<>uid://ddfuoh8wg7gkr::::res://assets/GameBackGround/parallax-mountain-mountains.png<>uid://cdd4np4k0f33g::::res://assets/GameBackGround/parallax-mountain-trees.png
+lvl2.tscn::PackedScene::4147656291794129669::1696510904::0::1::::<><>::uid://cunrt5gv1iiyt::::res://scens/LVLS/demo/demo_lvl.tscn<>uid://dd6dtyjvhe6fw::::res://assets/Music/menu2.mp3
+lvl3.tscn::PackedScene::5607988870540329687::1696510904::0::1::::<><>::uid://cunrt5gv1iiyt::::res://scens/LVLS/demo/demo_lvl.tscn
+::res://scens/LVLS/demo/::1696510904
+demo_lvl.tscn::PackedScene::6204522855869393763::1696510904::0::1::::<><>::uid://bsw08t6vn134i::::res://assets/Terrain/Terrain (16x16).png<>uid://dym7wmoet3mps::::res://scens/TRAPS/trampoline.tscn<>uid://cxwpf5u2a027t::::res://scens/Player/player.tscn<>uid://d1db4b5p6a884::::res://scens/TRAPS/chain.tscn<>uid://jxshiloc8up7::::res://scens/Items/final_flag.tscn<>uid://gx3x0aaa4ld7::::res://scens/TRAPS/spikes.tscn<>uid://bvpusoo6yvsv0::::res://scens/TRAPS/fall_platform.tscn
+::res://scens/Player/::1696510904
+player.tscn::PackedScene::6433522373335647463::1696510904::0::1::::<><>::res://scripts/player.gd<>uid://dcrr1nw1scuh7::::res://scens/Player/skins/dude.png<>uid://raxwpyj075ga::::res://scens/ui/hud.tscn<>uid://jc472dmu2aka::::res://assets/Main Characters/Appearing (96x96).png<>uid://be3avigteglg2::::res://assets/Main Characters/Desappearing (96x96).png<>uid://mdswcckd6kqi::::res://scens/Player/sounds/JumpSND.mp3<>uid://cn3ukdd4bxc33::::res://scens/Player/sounds/DeatthSND.mp3<>uid://by3mhu32ip7qc::::res://scens/Player/sounds/HitSND.mp3
 ::res://scens/Player/skins/::1694902501
 dude.png::CompressedTexture2D::7335813497687667406::1694813772::1694813779::1::::<><>::
 ninja.png::CompressedTexture2D::463385564455764719::1694902283::1694902501::1::::<><>::
@@ -223,38 +223,38 @@ DeatthSND.mp3::AudioStreamMP3::5744331273113009668::1694947780::1694947781::1:::
 HitSND.mp3::AudioStreamMP3::4129497707549684602::1694948369::1694948371::1::::<><>::
 JumpSND.mp3::AudioStreamMP3::849591558850174904::1694947780::1694947781::1::::<><>::
 WinSND.mp3::AudioStreamMP3::1152931793997620710::1694947780::1694947781::1::::<><>::
-::res://scens/TRAPS/::1694974672
-chain.tscn::PackedScene::8990477723536812627::1694974672::0::1::::<><>::res://scripts/Chain.gd<>uid://bb7nxhu4wnwqj
+::res://scens/TRAPS/::1696510904
+chain.tscn::PackedScene::8990477723536812627::1696510904::0::1::::<><>::res://scripts/Chain.gd<>uid://bb7nxhu4wnwqj::::res://assets/Traps/Saw/Off.png<>uid://nfie2nb2b82u::::res://assets/Traps/Saw/On (38x38).png
 fall_platform.tscn::PackedScene::3892599308943876147::1694941018::0::1::::<><>::res://scripts/FallPlatform.gd<>uid://mspymsk25ovf
 spikes.tscn::PackedScene::470356212313749018::1694959259::0::1::::<><>::res://scripts/Spikes.gd<>uid://dtuw7d00mqdxs
 trampoline.tscn::PackedScene::8870549714790942800::1694911267::0::1::::<><>::res://scripts/trampoline.gd<>uid://b5kv8l10yx2o3
-::res://scens/ui/::1694981046
+::res://scens/ui/::1696510904
 gametouch1.png::CompressedTexture2D::1019630771897601490::1694975213::1694975219::1::::<><>::
 gametouch2.png::CompressedTexture2D::3498015130029647069::1694975213::1694975219::1::::<><>::
 gametouch3t.png::CompressedTexture2D::2077855136222762366::1694975360::1694975365::1::::<><>::
 heal.png::CompressedTexture2D::6772681608572215048::1694904023::1694904028::1::::<><>::
 heal.tscn::PackedScene::4262492301285863049::1694905151::0::1::::<><>::uid://c3q0cusmw2i6s
-hud.tscn::PackedScene::1194646945515264884::1694978157::0::1::::<><>::res://scripts/HUD.gd<>uid://b1y1vjapxdp0t::::res://scens/ui/heal.tscn<>uid://bok88wi1j82nj::::res://themes/main_theme.tres<>uid://dsdwmxdfc6xd6::::res://scens/ui/Menu.png
-level_menu.tscn::PackedScene::3659685528295337806::1694981046::0::1::::<><>::uid://dhm1ioi6mpc6q::::res://assets/GameBackGround/parallax-mountain-bg.png<>res://scripts/level_menu.gd<>uid://c4m06pph3tnoc::::res://assets/Menu/Buttons/BackFocused.png<>uid://bxwp5g51q7t2j::::res://assets/Menu/Buttons/Back.png
-main_menu.tscn::PackedScene::3982017600568793234::1694981046::0::1::::<><>::res://scripts/main_menu.gd<>uid://b0vr3h3v16p8l::::res://assets/Menu/Buttons/Play.png<>uid://bfhdswqtp4io6::::res://assets/Menu/Buttons/Levels.png<>uid://dhm1ioi6mpc6q::::res://assets/GameBackGround/parallax-mountain-bg.png<>uid://deky822jc3g5e::::res://assets/Menu/Buttons/Settings.png<>uid://7udaf4uuemj4::::res://assets/Menu/Buttons/Previous.png<>uid://bkhp7lbi2f3ub::::res://assets/Menu/Buttons/Next.png<>uid://dct7kxo8ev01h::::res://assets/Menu/Buttons/PreviousFocused.png<>uid://dhcyoifnt202q::::res://assets/Main Characters/Mask Dude/Idle (32x32).png<>uid://bqq8hjhymiva2::::res://assets/Menu/Buttons/Close.png<>uid://dcdg72xka7xgm::::res://assets/Main Characters/Ninja Frog/Idle (32x32).png<>uid://cuw3jb3thkfn3::::res://assets/Main Characters/Pink Man/Idle (32x32).png<>uid://c7jedxsisd62t::::res://assets/Menu/Buttons/Leaderboard.png<>uid://d3lml4hrltvxg::::res://assets/Main Characters/Virtual Guy/Idle (32x32).png<>uid://d1sndyw5wsqhf::::res://assets/Menu/Buttons/PlayFocused.png<>uid://bok88wi1j82nj::::res://themes/main_theme.tres<>uid://b8ofmxns2lg08::::res://assets/Menu/Buttons/NextFocused.png<>uid://cj4m1p34760sj::::res://assets/Menu/Buttons/LevelsFocused.png<>uid://bpbguoqu4w1o::::res://assets/Menu/Buttons/AchievementFocused.png<>uid://5rxunuyea2wf::::res://assets/Menu/Buttons/SettingsFocused.png<>uid://dki7vwchnsloi::::res://assets/Menu/Buttons/CloseFocused.png
+hud.tscn::PackedScene::1194646945515264884::1696510904::0::1::::<><>::res://scripts/HUD.gd<>uid://b1y1vjapxdp0t::::res://scens/ui/heal.tscn<>uid://bok88wi1j82nj::::res://themes/main_theme.tres<>uid://dsdwmxdfc6xd6::::res://scens/ui/Menu.png
+level_menu.tscn::PackedScene::3659685528295337806::1696510904::0::1::::<><>::uid://dhm1ioi6mpc6q::::res://assets/GameBackGround/parallax-mountain-bg.png<>res://scripts/level_menu.gd<>uid://c4m06pph3tnoc::::res://assets/Menu/Buttons/BackFocused.png<>uid://bxwp5g51q7t2j::::res://assets/Menu/Buttons/Back.png
+main_menu.tscn::PackedScene::3982017600568793234::1696510904::0::1::::<><>::res://scripts/main_menu.gd<>uid://b0vr3h3v16p8l::::res://assets/Menu/Buttons/Play.png<>uid://bfhdswqtp4io6::::res://assets/Menu/Buttons/Levels.png<>uid://dhm1ioi6mpc6q::::res://assets/GameBackGround/parallax-mountain-bg.png<>uid://deky822jc3g5e::::res://assets/Menu/Buttons/Settings.png<>uid://7udaf4uuemj4::::res://assets/Menu/Buttons/Previous.png<>uid://bkhp7lbi2f3ub::::res://assets/Menu/Buttons/Next.png<>uid://dct7kxo8ev01h::::res://assets/Menu/Buttons/PreviousFocused.png<>uid://dhcyoifnt202q::::res://assets/Main Characters/Mask Dude/Idle (32x32).png<>uid://bqq8hjhymiva2::::res://assets/Menu/Buttons/Close.png<>uid://dcdg72xka7xgm::::res://assets/Main Characters/Ninja Frog/Idle (32x32).png<>uid://cuw3jb3thkfn3::::res://assets/Main Characters/Pink Man/Idle (32x32).png<>uid://c7jedxsisd62t::::res://assets/Menu/Buttons/Leaderboard.png<>uid://d3lml4hrltvxg::::res://assets/Main Characters/Virtual Guy/Idle (32x32).png<>uid://d1sndyw5wsqhf::::res://assets/Menu/Buttons/PlayFocused.png<>uid://bok88wi1j82nj::::res://themes/main_theme.tres<>uid://b8ofmxns2lg08::::res://assets/Menu/Buttons/NextFocused.png<>uid://cj4m1p34760sj::::res://assets/Menu/Buttons/LevelsFocused.png<>uid://bpbguoqu4w1o::::res://assets/Menu/Buttons/AchievementFocused.png<>uid://5rxunuyea2wf::::res://assets/Menu/Buttons/SettingsFocused.png<>uid://dki7vwchnsloi::::res://assets/Menu/Buttons/CloseFocused.png
 Menu.png::CompressedTexture2D::8430212786096347865::1694975746::1694975749::1::::<><>::
-quit_menu.tscn::PackedScene::134332168691512194::1694981046::0::1::::<><>::res://scripts/exit_menu.gd<>uid://bok88wi1j82nj::::res://themes/main_theme.tres<>uid://bqq8hjhymiva2::::res://assets/Menu/Buttons/Close.png<>uid://dki7vwchnsloi::::res://assets/Menu/Buttons/CloseFocused.png<>uid://bxwp5g51q7t2j::::res://assets/Menu/Buttons/Back.png<>uid://c4m06pph3tnoc::::res://assets/Menu/Buttons/BackFocused.png
-reload_menu.tscn::PackedScene::2529140343780842862::1694978157::0::1::::<><>::res://scripts/reload_menu.gd<>uid://bok88wi1j82nj::::res://themes/main_theme.tres<>uid://bqq8hjhymiva2::::res://assets/Menu/Buttons/Close.png<>uid://l1tqypdekilb::::res://assets/Menu/Buttons/Restart.png<>uid://c6tfg13hf7ob3::::res://assets/Menu/Buttons/RestartFocused.png<>uid://dki7vwchnsloi::::res://assets/Menu/Buttons/CloseFocused.png
-win_menu.tscn::PackedScene::3356053409835045414::1694978157::0::1::::<><>::uid://bok88wi1j82nj::::res://themes/main_theme.tres<>res://scripts/win_menu.gd<>uid://bkhp7lbi2f3ub::::res://assets/Menu/Buttons/Next.png<>uid://b8ofmxns2lg08::::res://assets/Menu/Buttons/NextFocused.png<>uid://bqq8hjhymiva2::::res://assets/Menu/Buttons/Close.png<>uid://dki7vwchnsloi::::res://assets/Menu/Buttons/CloseFocused.png
-::res://scripts/::1694981046
-Chain.gd::GDScript::-1::1694977667::0::1::::<>StaticBody2D<>::
+quit_menu.tscn::PackedScene::134332168691512194::1696510904::0::1::::<><>::res://scripts/exit_menu.gd<>uid://bok88wi1j82nj::::res://themes/main_theme.tres<>uid://bqq8hjhymiva2::::res://assets/Menu/Buttons/Close.png<>uid://dki7vwchnsloi::::res://assets/Menu/Buttons/CloseFocused.png<>uid://bxwp5g51q7t2j::::res://assets/Menu/Buttons/Back.png<>uid://c4m06pph3tnoc::::res://assets/Menu/Buttons/BackFocused.png
+reload_menu.tscn::PackedScene::2529140343780842862::1696510073::0::1::::<><>::res://scripts/reload_menu.gd<>uid://bok88wi1j82nj::::res://themes/main_theme.tres<>uid://bqq8hjhymiva2::::res://assets/Menu/Buttons/Close.png<>uid://l1tqypdekilb::::res://assets/Menu/Buttons/Restart.png<>uid://c6tfg13hf7ob3::::res://assets/Menu/Buttons/RestartFocused.png<>uid://dki7vwchnsloi::::res://assets/Menu/Buttons/CloseFocused.png
+win_menu.tscn::PackedScene::3356053409835045414::1696510073::0::1::::<><>::uid://bok88wi1j82nj::::res://themes/main_theme.tres<>res://scripts/win_menu.gd<>uid://bkhp7lbi2f3ub::::res://assets/Menu/Buttons/Next.png<>uid://b8ofmxns2lg08::::res://assets/Menu/Buttons/NextFocused.png<>uid://bqq8hjhymiva2::::res://assets/Menu/Buttons/Close.png<>uid://dki7vwchnsloi::::res://assets/Menu/Buttons/CloseFocused.png
+::res://scripts/::1696510902
+Chain.gd::GDScript::-1::1696510902::0::1::::<>StaticBody2D<>::
 exit_menu.gd::GDScript::-1::1694977667::0::1::::exit_menu<>Control<>::
 FallPlatform.gd::GDScript::-1::1694899829::0::1::::<>StaticBody2D<>::
-final_flag.gd::GDScript::-1::1694980604::0::1::::<>Area2D<>::
-HUD.gd::GDScript::-1::1694949040::0::1::::<>CanvasLayer<>::
+final_flag.gd::GDScript::-1::1695046428::0::1::::<>Area2D<>::
+HUD.gd::GDScript::-1::1696510877::0::1::::<>CanvasLayer<>::
 level_menu.gd::GDScript::-1::1694981046::0::1::::<>Control<>::
 main_menu.gd::GDScript::-1::1694977893::0::1::::<>Control<>::
 player.gd::GDScript::-1::1694948510::0::1::::player<>CharacterBody2D<>::
 reload_menu.gd::GDScript::-1::1694946408::0::1::::<>CanvasLayer<>::
-root.gd::GDScript::-1::1694956400::0::1::::<>Node<>::
+root.gd::GDScript::-1::1696510850::0::1::::<>Node<>::
 Spikes.gd::GDScript::-1::1694979494::0::1::::<>StaticBody2D<>::
 trampoline.gd::GDScript::-1::1694896683::0::1::::<>StaticBody2D<>::
-win_menu.gd::GDScript::-1::1694962308::0::1::::<>CanvasLayer<>::
+win_menu.gd::GDScript::-1::1695046428::0::1::::<>CanvasLayer<>::
 ::res://themes/::1694818880
 main_theme.tres::Theme::3391772033193122311::1694818880::0::1::::<><>::uid://cqgpmlhiaie6m
 ::res://themes/fonst/::1694799610

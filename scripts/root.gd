@@ -1,7 +1,7 @@
 extends Node
 
 @export var sound : AudioStreamPlayer
-
+var trigger : String
 enum {
 	GAME_MODE,
 	MENU_MODE

@@ -5,12 +5,13 @@
 [ext_resource type="Theme" uid="uid://bok88wi1j82nj" path="res://themes/main_theme.tres" id="3_kknfr"]
 [ext_resource type="Texture2D" uid="uid://dsdwmxdfc6xd6" path="res://scens/ui/Menu.png" id="7_vx1p5"]
 
-[node name="HUD" type="CanvasLayer" node_paths=PackedStringArray("anim1", "anim2", "anim3", "timelbl")]
+[node name="HUD" type="CanvasLayer" node_paths=PackedStringArray("anim1", "anim2", "anim3", "timelbl", "nameobject")]
 script = ExtResource("1_hqesb")
 anim1 = NodePath("heal")
 anim2 = NodePath("heal2")
 anim3 = NodePath("heal3")
 timelbl = NodePath("TimeLBL")
+nameobject = NodePath("Name")
 
 [node name="heal" parent="." instance=ExtResource("2_rd16w")]
 process_mode = 3
@@ -54,5 +55,19 @@ position = Vector2(1152, 40)
 scale = Vector2(3, 3)
 texture_normal = ExtResource("7_vx1p5")
 action = "escape"
+
+[node name="Name" type="Label" parent="."]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -20.0
+offset_top = -23.0
+offset_right = 20.0
+grow_horizontal = 2
+grow_vertical = 0
+theme = ExtResource("3_kknfr")
+theme_override_font_sizes/font_size = 20
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

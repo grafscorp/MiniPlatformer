@@ -7,6 +7,9 @@ extends CanvasLayer
 @export var anim3 : AnimatedSprite2D 
 @export var timelbl : Label
 @export var Player : player
+
+@export var nameobject : Label 
+
 var heals : Array[AnimatedSprite2D]
 var time : int
 
@@ -41,3 +44,5 @@ func _on_timer_timeout() -> void:
 	if time/59 >= 60:
 		Player.death()
 		return
+func _process(delta: float) -> void:
+	nameobject.text = Root.trigger

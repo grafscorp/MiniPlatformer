@@ -8,7 +8,7 @@ func _ready() -> void:
 func _on_next_lvl_pressed() -> void:
 	Root.sndplay()
 	get_tree().paused = false
-	get_tree().change_scene_to_file("res://scens/LVLS/lvl"+ str(Root.currect_level+1)+ ".tscn")
+	get_tree().change_scene_to_file("res://scens/LVLS/lvl"+ str(Root.currect_level)+ ".tscn")
 func _on_quit_pressed() -> void:
 	Root.sndplay()
 	get_tree().paused = false
